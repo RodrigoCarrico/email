@@ -41,9 +41,9 @@ public class Controller implements Callback<String> {
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
             String dataDia = sdf.format(new Date());
 
-            new SendMail("","").sendMail("xxxxxx@gmail.com","xxxxxxxxxxxxxx@xxx.com",
+            new SendMail("","").sendMail("","",
                     "Ip da Web",
-                    "Data dia: "+dataDia+ "\nIp acesso: http://"+retorno);
+                    "Data dia: "+dataDia+ "\nIp acesso: http://"+retorno+"");
             System.out.println(retorno);
             System.exit(0);
         } else {
